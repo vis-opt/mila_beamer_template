@@ -1,0 +1,84 @@
+\documentclass[a4paper,9pt]{beamer}
+\usetheme{Malmoe}  % Base theme
+% Now we try to put MILA's colors
+\definecolor{MilaBlue1}{RGB}{78,179,225} % lighter, PMS 306
+\definecolor{MilaBlue2}{RGB}{35,154,204} % darker, PMS 639
+
+\setbeamercolor{structure}{fg=MilaBlue2}
+\setbeamercolor{title}{fg=MilaBlue1,bg=black}
+\setbeamercolor{section in head/foot}{fg=MilaBlue1,bg=black}
+\setbeamercolor{subsection in head/foot}{fg=MilaBlue2,bg=white}
+\setbeamercolor{frametitle}{fg=white,bg=MilaBlue2}
+
+\setbeamertemplate{footline}[page number]
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+% \usepackage{minted} % Commented out because these slides will not contain any code 
+
+\usepackage[T1]{fontenc}
+\usepackage{inconsolata}
+
+% for copy-pastable ', we need the following
+\usepackage{upquote}
+\usepackage{textcomp}
+\usepackage{bibentry}
+\usepackage{lmodern}
+%\usepackage{ragged2e}
+%\usepackage{multirow}
+%\usepackage{fancyvrb}
+%\usepackage{color}
+\def\imagetop#1{\vtop{\null\hbox{#1}}}
+
+% Standard LaTeX stuff - note the optional abbreviated title being provided
+
+%% ALL that presentation slide are not used! We use a normal frame for that.
+\title{Title of your work }
+\subtitle{Subtitle}
+\author[MILA]{%
+Your name \\
+Your email \\
+Montreal Institute for Learning Algorithms\\
+Université de Montréal}
+
+\date{%
+Insert the date
+}
+
+\setbeamertemplate{navigation symbols}{}
+
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+  \includegraphics[width=1in]{MILA_official_2016.png}
+  \hfill
+  \includegraphics[width=1in]{UdeM_logo.pdf}
+\end{frame}
+
+
+\begin{frame}{Stuff}
+  Here is some stuff.
+
+  \begin{itemize}
+    \item Here is a URL: \url{https://www.google.com}
+    \item More stuff
+  \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Another frame}
+\huge
+\begin{center}
+Bigger Heading
+\end{center}
+\Large
+Smaller heading
+\normalsize
+\begin{itemize}
+\item Another list
+\end{itemize}
+\end{frame}
+
+\end{document}
